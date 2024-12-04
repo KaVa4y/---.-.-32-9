@@ -28,6 +28,13 @@ import three from "./img/three.svg"
 import four from "./img/four.svg"
 import buttl from "./img/ButL.svg"
 import buttr from "./img/ButR.svg"
+import bannerr from "./img/Banner.svg"
+import bannerend from "./img/BannerEnd.svg"
+import drop from "./img/Drop.svg"
+import time from "./img/Time.svg"
+import retu from "./img/Return.svg"
+import star from "./img/Star.svg"
+
 
 function App() {
   return (
@@ -121,27 +128,29 @@ function App() {
       <div className='bg-white w-full h-[64px] mt-20'></div>
       <div>
         <p className='font-bold justify-center flex text-[40px]'>Hot off the press</p>
-        <div className='border-2 rounded-xl ml-40 w-[1216px] h-[286px] flex justify-between'>
-          <div className=' w-[405px] border-r-2 mb-6 mt-6'>
-            <img src={bloom} className='py-4 px-10'/>
-              <div className='w-[260px] h-[95px] px-10'>
-                <p>“First Light: Where great design and the finest materials unite in ultimate comfort”</p>
-              </div>
-              <img src={link} className='mt-6 px-10'/>
-          </div>
-          <div className=' w-[405px] border-r-2 mb-6 mt-6'>
-            <img src={forb} className='py-4 px-10'/>
-              <div className='w-[260px] h-[95px] px-10'>
-                <p>“First Light: Where great design and the finest materials unite in ultimate comfort”</p>
-              </div>
-              <img src={link} className='mt-6 px-10'/>
-          </div>
-          <div className='w-[405px]'>
-            <img src={fast} className='py-10 px-10'/>
-              <div className='w-[260px] h-[95px] px-10 mt-[-24px]'>
-                <p>“First Light: Where great design and the finest materials unite in ultimate comfort”</p>
-              </div>
-              <img src={link} className='mt-6 px-10'/>
+        <div className='flex items-center justify-center'>
+          <div className='border-2 rounded-xl w-[1216px] h-[286px] flex justify-between'>
+            <div className=' w-[405px] border-r-2 mb-6 mt-6'>
+              <img src={bloom} className='py-4 px-10'/>
+                <div className='w-[260px] h-[95px] px-10'>
+                  <p>“First Light: Where great design and the finest materials unite in ultimate comfort”</p>
+                </div>
+                <img src={link} className='mt-6 px-10'/>
+            </div>
+            <div className=' w-[405px] border-r-2 mb-6 mt-6'>
+              <img src={forb} className='py-4 px-10'/>
+                <div className='w-[298px] h-[75px] px-10'>
+                  <p>“First light proves it is possible to combine great design with the finest materials available.”</p>
+                </div>
+                <img src={link} className='mt-[44px] px-10'/>
+            </div>
+            <div className='w-[405px]'>
+              <img src={fast} className='py-10 px-10'/>
+                <div className='w-[320px] h-[75px] px-10 mt-[-24px]'>
+                  <p>“Redefining excellence with premium materials and visionary robust design.”</p>
+                </div>
+                <img src={link} className='mt-[44px] px-10'/>
+            </div>
           </div>
         </div>
       </div>
@@ -193,7 +202,66 @@ function App() {
         <div className='text-[40px] font-bold flex justify-center'>
           <p>We always have your back</p>
         </div>
+        <div className='flex py-10 justify-center items-center'>
+          <img src={bannerr}/>
+            <button className='bg-black text-white absolute rounded-[8px] w-[295px] h-[72px] mt-[490px] ml-[-625px]'>
+              <p className='font-bold'>100% Premium Cotton</p>
+              <p>We use ethically sourced cotton only.</p>
+            </button>
+            <button className='bg-black text-white absolute rounded-[8px] w-[236px] h-[72px] mt-[-130px] ml-[630px]'>
+              <p className='font-bold'>Made in Portugal</p>
+              <p>With hand finished details</p>
+            </button>
+            <button className='bg-black text-white absolute rounded-[8px] w-[293px] h-[72px] mt-[490px] ml-[630px]'>
+              <p className='font-bold'>Breathable material</p>
+              <p>Keeping you cool throughout the day</p>
+            </button>
+        </div>
       </div>
+      <div className='bg-white w-full h-[60px] mt-10'></div>
+      <div className='flex items-center justify-center'>
+        <div className='w-[1216px] h-[120px] border-t-2 border-b-2 flex justify-between'>
+          <div className='flex py-[26px]'>
+            <img src={drop}/>
+            <p className='w-[140px] h-[38px] py-2 px-3'>Premium stain resistant fabrics</p>
+          </div>
+          <div className='flex py-[26px]'>
+            <img src={time}/>
+            <p className='w-[140px] h-[38px] py-2 px-3'>Free Express Shipping</p>
+          </div>
+          <div className='flex py-[26px]'>
+            <img src={retu}/>
+            <p className='w-[140px] h-[38px] py-2 px-3'>Free returns within 30 days</p>
+          </div>
+          <div className='flex py-[26px]'>
+            <img src={star}/>
+            <p className='w-[140px] h-[38px] py-2 px-3'>Customers rate  us 4.8 / 5.0</p>
+          </div>
+        </div>
+      </div>
+      <div className='bg-white w-full h-[60px] mt-10'></div>
+      <div className='flex items-center justify-center'>
+        <div className='flex items-center justify-start w-[1216px] h-[610px] border-2 rounded-md'>
+          <img className='rounded-l-md' src={bannerend}/>
+          <div className='w-[308px] h-[482px] gap-[105px] ml-16 bg-white'>
+            <div>
+              <p className='w-[308px] h-[38px] text-[32px]'>Visit our popup shop</p>
+            </div>
+            <div>
+              <p className='w-[160px] h-[78px] mt-8 text-[16px]'>Willemsparkweg 63 1071 GS Amsterdam The Netherlands</p>
+            </div>
+            <div className='flex justify-between items-center'>
+              <div>
+                <p className='w-[89px] h-[302px] mt-8 text-[16px] leading-10'>Monday Tuesday Wednesday Thursday Friday Saturday Sunday</p>
+              </div>
+              <div>
+                <p className='w-[108px] h-[302px] mt-8 text-[16px] leading-10'>12.00 - 19.00 10.00 - 19.00 10.00 - 19.00 10.00 - 21.00 10.00 - 19.00 10.00 - 18.00 12.00 - 18.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='bg-white w-full h-[60px] mt-10'></div>
     </div>
   );
 }
