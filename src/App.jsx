@@ -1,4 +1,5 @@
 import './index.css';
+import './index.js';
 import dots from "./img/Dots.svg"
 import logo1 from "./img/Logo1.svg"
 import logo2 from "./img/Logo2.svg"
@@ -80,7 +81,7 @@ function App() {
           <img src={dora} alt='' className='w-1/2'/>
         </div>
         <div>
-          <button className='bg-black text-white absolute rounded-[8px] font-bold w-36 h-14 ml-[805px] mt-[-90px]'>Shop Shirts</button>
+          <button className='scroll-top bg-black text-white absolute rounded-[8px] font-bold w-36 h-14 ml-[805px] mt-[-90px]'>Shop Shirts</button>
         </div>
         <div className='text-[20px] font-bold'>
           <div className='px-80 mt-[-170px]'>
