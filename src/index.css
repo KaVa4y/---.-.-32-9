@@ -22,3 +22,7 @@ code {
 .text {
   color: white;
 }
+
+.gray {
+  background-color: #E7E7E7;
+}
